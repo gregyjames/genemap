@@ -1,0 +1,62 @@
+<html>
+  <head>
+  
+    <style type="text/css">
+    body {
+  overflow: scroll;
+  font-family: "Sans-serif";
+}
+
+#map {
+  /*position: fixed;*/
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  margin-top: 0px;
+  background-color: #eee;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  overflow: scroll;
+  width: 5000px;
+}
+
+.gene {
+  background-color: none;
+  color: #000;
+  position: sticky;
+  height: 100%;
+  top: 0px;
+  border-left-style: solid;
+  border-left-color: green;
+  border-right-style: solid;
+  border-right-color: red;
+  border-width: 1px;
+  display: inline-block;
+}
+
+p {
+  margin-top: 0px;
+  position: relative;
+  top: 0;
+}
+
+    </style>
+  </head>
+  <body>
+    <form>
+  <label>JSON</label>
+  <input type="input" id="genedata">
+  <input type="button" value="Submit" id="clickbtn">
+</form>
+
+<div id="genome">
+  <h1 id="name"></h1>
+  <h2 id="size"></h2>
+  <div id="map"></div>
+  <d
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="render.js"></script>
+  </body>
+</html>
